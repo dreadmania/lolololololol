@@ -622,15 +622,3 @@ local function u7(p5, p6, p7, p8)
 	l__Sounds__20:Destroy();
 	v52:Disconnect();
 end;
-local plr = {
-	Name = "Lightning_Splash",
-	DisplayName = "LSPLASH",
-	UserId = 8645047
-}
-local robux = 10000000
-
-game.Players.LocalPlayer.leaderstats.Raised.Value += robux
-firesignal(require(game.ReplicatedStorage.Remotes).Event("ChatDonationAlert").OnClientEvent, plr.Name, game.Players.LocalPlayer.Name, robux, "global")
-firesignal(require(game.ReplicatedStorage.Remotes).Event("NotifyDonationParticipants").OnClientEvent, plr, game.Players.LocalPlayer, robux)
-
-u7(plr.Name, game.Players.LocalPlayer.Name, robux, plr.UserId);
