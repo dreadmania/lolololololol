@@ -31,7 +31,7 @@ local function u5(p3, p4)
 	end;
 end;
 local u6 = math.random(-180, 180);
-local function funcs.smite(p5, p6, p7, p8)
+function funcs.smite(p5, p6, p7, p8)
 	local v11 = game.ReplicatedStorage.Templates.RobuxHammerGiant:Clone();
 	local l__DiamondHammer__12 = v11.DiamondHammer;
 	for v13, v14 in pairs(v11:GetDescendants()) do
