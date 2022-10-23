@@ -1,13 +1,15 @@
 -- Script GUID: {32ECC9D3-9949-49D6-9CDE-407971C6B270}
 -- Decompiled with the Synapse X Luau decompiler.
 
+funcs = {}
+
 wait = task.wait;
 local l__ReplicatedStorage__1 = game:GetService("ReplicatedStorage");
 local l__Players__2 = game:GetService("Players");
 local l__Debris__3 = game:GetService("Debris");
 local l__RunService__4 = game:GetService("RunService");
 local l__TweenService__1 = game:GetService("TweenService");
-local function u2(p1, p2)
+function funcs.smite(p1, p2)
 	p1.Speed = NumberRange.new(p1.Speed.Min * p2, p1.Speed.Max * p2);
 	p1.Acceleration = p1.Acceleration * p2;
 	local l__Keypoints__5 = p1.Size.Keypoints;
@@ -622,3 +624,6 @@ local function u7(p5, p6, p7, p8)
 	l__Sounds__20:Destroy();
 	v52:Disconnect();
 end;
+
+
+return funcs
