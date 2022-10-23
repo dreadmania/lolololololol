@@ -1,4 +1,4 @@
-local funcs = {}
+funcs = {}
 wait = task.wait;
 local l__ReplicatedStorage__1 = game:GetService("ReplicatedStorage");
 local l__Players__2 = game:GetService("Players");
