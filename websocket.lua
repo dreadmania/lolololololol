@@ -1,7 +1,7 @@
 local socket = syn.websocket.connect("ws://prickly-poised-veil.glitch.me")
 repeat wait() until socket
 
-local gui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania11352/lolololololol/main/gui"))()
+local gui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania11352/lolololololol/main/gui.lua"))()
 gui.Parent = game.CoreGui
 local box = gui.Frame.Frame.TextBox
 box.Font = Enum.Font.Code
