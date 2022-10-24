@@ -1,9 +1,9 @@
 local socket = syn.websocket.connect("ws://prickly-poised-veil.glitch.me")
 repeat wait() until socket
 
-local boxs = Instance.new("ScreenGui", game.Players.LocalPlayer.PlayerGui)
-local box = Instance.new("TextBox", boxs)
-
+local gui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania11352/lolololololol/main/gui"))()
+gui.Parent = game.CoreGui
+local box = gui.Frame.Frame.TextBox
 box.MultiLine = false
 box.BackgroundTransparency = .5
 box.Position = UDim2.new(0.5, 0, 0.5, 0)
@@ -21,7 +21,7 @@ end
 game:GetService("UserInputService").InputEnded:Connect(function(inp, proc)
     if not proc then
         if inp.KeyCode == Enum.KeyCode.R then
-            box.Visible = not box.Visible 
+            gui.Enabled = not gui.Enabled
         end
     end
 end)
